@@ -1,9 +1,12 @@
-sta = input('Type a word: ')
-print('\nOriginal String is', sta)
+sentence = input('Type a word: ')
+print('\n')
+print('Original String is', sentence)
 
-size = len(sta)
+size = len(sentence)
 
-print('\nPrinting only even index chars:')
+print('\n')
+print('Printing only even index chars:')
 
 for i in range(0, size, 2):
-    print(sta[i], end=' ')
+    print(sentence[i], end=' ')
+print('\n')  # 'print()' added to make the prompt appear in the new line while executing the command through terminal.
