@@ -1,5 +1,8 @@
-# This is a straight forward code to check if a number is a prime number or not.
-# Note: This code is not efficient for checking very big prime numbers.
+'''
+This is a straight forward code to check if a number is a prime number or not.
+
+Note: This code is not efficient for checking very big prime numbers.
+'''
 
 n = int(input('Enter a number: '))
 
