@@ -1,14 +1,16 @@
-x = 0
+# Checks if the input number is a palindromic number or not.
+# A palindromic number is a number that remains the same when its digits are reversed. eg: 121, 3456543, etc.
 
-z = input('Type a number: ')
+n = input('Type a number: ')
 
-R = len(z)
+size = len(n)
 
-for i in range(R//2):
-    if z[i] == z[- (i+1)]:
-        x += 1
-
-if x == R//2:
-    print('Yes. The given number is a palindrome number.')
+for i in range(size//2):
+    if n[i] == n[-(i+1)]:
+        continue
+    else:
+        print('No, the given number is not a palindrome number.')
+        break
 else:
-    print('No. The given number is not a palindrome number.')
+    print('Yes, the given number is a palindrome number.')
+
