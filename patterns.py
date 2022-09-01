@@ -1,3 +1,6 @@
+# Fun code.
+
+
 import sys
 
 
@@ -20,3 +23,4 @@ print('WELCOME'.center(m, '-'))
 
 for i in range((n-3)//2, -1, -1):
     print(('.|.'*(2*i+1)).center(m, '-'))
+
