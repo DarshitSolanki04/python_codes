@@ -4,6 +4,7 @@ This is a straight forward code to check if a number is a prime number or not.
 Note: This code is not efficient for checking very big prime numbers.
 '''
 
+
 n = int(input('Enter a number: '))
 
 if n > 1:  # All prime numbers are greater than one. Note: One is not a prime number.

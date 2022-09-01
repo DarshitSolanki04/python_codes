@@ -4,6 +4,7 @@ Checks if the input number is a palindromic number or not.
 A palindromic number is a number that remains the same when its digits are reversed. e.g.: 121, 3456543, etc.
 '''
 
+
 n = input('Type a number: ')
 
 size = len(n)

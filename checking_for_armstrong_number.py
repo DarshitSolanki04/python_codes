@@ -4,6 +4,7 @@ Checks whether the input number is an armstrong number or not.
 Armstrong number is a number in which when each digit is raised to the power of the total number of digits in the original number and summed then it returns the same original number. e.g.: 8208 -> 8^4 + 2^4 + 0^4 + 8^4 = 8208.
 '''
 
+
 n = int(input('Enter a number: '))
 
 x = n

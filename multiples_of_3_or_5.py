@@ -1,6 +1,7 @@
 # Multiples of 3 and 5
 # Project Euler - Prb 1
 
+
 t = int(input().strip())
 for i in range(t):
     my_list3 = [0]

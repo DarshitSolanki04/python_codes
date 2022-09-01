@@ -1,5 +1,10 @@
-var = 'Emma is good developer. Emma is a writer.'
+'''
+Counts how many times a particular word/fragment has  appeared in a string.
+'''
 
-z = var.count('Emma')
+var = 'Emma is a good developer. Emma is a writer.'
 
-print('Emma appeared', z, 'times.')
+n = var.count('Emma')
+
+print('Emma appeared', n, 'times.')
+
