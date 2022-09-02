@@ -1,14 +1,18 @@
-lst1 = [10, 20, 25, 30, 35]
-lst2 = [40, 45, 60, 75, 90]
+# Appends odd numbers from list1 to lst and even numbers from list2 to lst.
+
+
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
 
 lst = []
 
-for i in lst1:
+for i in list1:
     if i % 2 != 0:
         lst.append(i)
 
-for i in lst2:
+for i in list2:
     if i % 2 == 0:
         lst.append(i)
 
-print('\nResulting list:', lst)
+print('Resulting list:', lst)
+
