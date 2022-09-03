@@ -1,4 +1,5 @@
-# Exponent function for only non-negative integers
+# Exponent function for only non-negative integers.
+
 
 x = 1
 
@@ -14,3 +15,4 @@ def exponent(base, exp):
 
 baSe, eXp = exponent(5, 4)
 print('\n', baSe, 'raised to the power', eXp, ':', x)
+
