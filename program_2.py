@@ -3,10 +3,9 @@
 
 print('Printing the sum of every 2 consecutive numbers in range(10)')  # Remember, in range(10) the number 10 is not included.
 
-prevNumber = 0 
+prev_number = 0 
 
-for currNumber in range(1,10):  # We start from initial value 1 in the current number because the previous number is already a 0.
+for curr_number in range(10):  # Initially both the numbers are same, i.e. zero.
     # print('Current Number', i, ' Previous Number', j, ' Sum:', i+j)
-    print('Current Number %d Previous Number %d Sum: %d' % (currNumber, prevNumber, currNumber+prevNumber))
-    prevNumber = currNumber
-
+    print('Current Number %d Previous Number %d Sum: %d' % (curr_number, prev_number, curr_number+prev_number))
+    prev_number = curr_number
