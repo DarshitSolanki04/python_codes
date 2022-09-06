@@ -1,12 +1,12 @@
-n = int(input('Enter income to calculate tax: '))
+# This program calculates taxes based on income
 
-if n <= 10000:
+income = int(input('Enter income to calculate tax: '))
+
+if income <= 10000:
     print('\nIncome is not taxable.')
-elif n <= 20000:
-    x = n - 10000
-    y = x / 10
-    print('\nPayable tax amount:', y)
+elif income <= 20000:
+    tax = (income - 10000)/10
+    print('\nPayable tax amount:', tax)
 else:
-    x = n - 20000
-    y = x / 5 + 1000
-    print('\nPayable tax amount:', y)
+    tax = (income - 20000)/5 + 1000
+    print('\nPayable tax amount:', tax)
