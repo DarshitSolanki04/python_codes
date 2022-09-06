@@ -1,4 +1,5 @@
-# This program calculates taxes based on income
+# This program calculates tax based on income.
+
 
 income = int(input('Enter income to calculate tax: '))
 
