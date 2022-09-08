@@ -1,13 +1,19 @@
+'''
+Expansion of sine of theta.
+'''
+
+
 import math
 
-o = int(input('Enter the value of theta (in deg): '))
-n = int(input('Enter the no. of approximation terms: '))
+angle = int(input('Enter the value of theta (in deg): '))
+no_of_terms = int(input('Enter the no. of approximation terms: '))
 
-theta = o * math.pi / 180
+theta = angle * math.pi / 180
 
 z = 0
 
-for i in range(n):
+for i in range(no_of_terms):
     z = z + ((-1)**i * theta**(2*i+1)) / math.factorial(2*i+1)
 
-print('\nsin(', o, ') =', z)
+print('\nsin(', angle, ') =', z)
+
