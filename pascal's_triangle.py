@@ -1,7 +1,7 @@
 # Pascal's Triangle
 
 
-def pas_line(array):
+def pascal_line(array):
     line = []
     line.append(1)
     for i in range(len(array)-1):
@@ -16,15 +16,12 @@ if n < 1:
     print('Type a number greater than 0.')
 elif n == 1:
     print(1)
-elif n == 2:
-    print(1)
-    print(1, 1)
 else:
-    printer = [1, 1]
     print(1)
     print(1, 1)
+    printer = [1, 1]
     for i in range(n - 2):
-        printer = pas_line(printer)
-        for j in range(len(printer)):
-            print(printer[j], end=' ')
+        printer = pascal_line(printer)
+        for j in printer:
+            print(j, end=' ')
         print('')
