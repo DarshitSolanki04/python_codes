@@ -1,21 +1,30 @@
 # Pascal's Triangle
 
-P = [1]
-Q = [1, 1]
+
+def pas_line(array):
+    line = []
+    line.append(1)
+    for i in range(len(array)-1):
+        line.append(array[i] + array[i+1])
+    line.append(1)
+    return line
+
 
 n = int(input('Number of Lines: '))
 
-print(P)
-print(Q)
-
-P = []
-
-for i in range(2, n):
-    P.append(1)
-    for j in range(1, i):
-        P.insert(j, Q[j-1] + Q[j])
-    P.append(1)
-    print(P)
-    Q = P.copy()
-    P = []
-
+if n < 1:
+    print('Type a number greater than 0.')
+elif n == 1:
+    print(1)
+elif n == 2:
+    print(1)
+    print(1, 1)
+else:
+    printer = [1, 1]
+    print(1)
+    print(1, 1)
+    for i in range(n - 2):
+        printer = pas_line(printer)
+        for j in range(len(printer)):
+            print(printer[j], end=' ')
+        print('')
