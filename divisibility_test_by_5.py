@@ -1,19 +1,8 @@
 '''
-Prints all the elements of a list that are divisible by 5.
+Prints a list of numbers divisible by 5 from the given input.
 '''
 
 
-def divisible_by_5(array):
+array = list(map(int, input('Type an array of numbers separated by a space: ').split()))
 
-    print('Given list:', array, '\n')
-    print('Divisible by 5:')
-
-    for i in array:
-        if i % 5 == 0:
-            print(i)
-
-
-list1 = [101, 205, 335, 46, 55, 105]
-
-divisible_by_5(list1)
-
+print([i for i in array if ((i % 10) == 0 or (i % 10) == 5)])
