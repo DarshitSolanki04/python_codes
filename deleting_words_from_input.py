@@ -1,16 +1,13 @@
 '''
-Removes the given number of characters from the input word from the begining.
+Removes the first 'n' characters from the input word.
 '''
 
 
-var = input('Type a word: ')
+var = list(input('Type any word: '))
 
 n = int(input('Type the no. of characters you want to remove: '))
-print('')
 
-size = len(var)
-
-for i in range(n, size):
-    print(var[i], end='')
-print('\n')
-
+if n > len(var):
+    print('The number can not be greater then the length of the input word.')
+else:
+    print(''.join(var[n:]))
